@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  width: 100%;
+  /* height: 100vh; */
+  /* background: url(img/bg1.jpg); */
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  /* background: linear-gradient(90deg, rgba(227,227,229,1) 1%, rgba(249,249,251,1) 42%); */
+  background: linear-gradient(
+    90deg,
+    rgba(227, 227, 229, 1) 1%,
+    rgba(249, 249, 251, 1) 42%
+  );
+}
+.logo {
+  max-height: 60px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+  color: #3e4ca7;
+  font-size: large;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+section {
+  padding: 100px 0;
+}
+.project {
+  color: black;
+  /* background: plum; */
+  background: #fd4766;
+  position: relative;
+}
+.project .title {
+  font-family: "Montserrat", sans-serif;
+  color: #3e4ca7;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.project .project-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.project .project-content .card {
+  width: calc(25% - 20px);
+  background: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+}
+
+.project .project-content .card:hover {
+  background: #ffa7db;
+  color: aqua;
+}
+.project .project-content .card .box {
+  transition: all 0.3 ease;
+}
+.project .project-content .card .box:hover {
+  transform: scale(1.1);
+}
+.project .project-content .card img {
+  height: 60px;
+  width: 80px;
+  border-radius: 5px;
+}
+.project .project-content .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.project .project-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.project .project-content .game-2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.project .project-content .game-3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Responsive Media Query */
+
+@media only screen and (max-width: 1920px) {
+  .menu-btn {
+    display: none;
+    z-index: 999;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .logo {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .btn {
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 200;
+  }
+}
+@media only screen and (max-width: 1095px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+  }
+}
+
+@media (max-width: 947px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu-btn {
+    display: inline-flex;
+    z-index: 999;
+    width: 100px;
+    height: 40px;
+  }
+  .btn {
+    display: none;
+  }
+  nav ul li a {
+    display: none;
+  }
+  .project .project-content .card {
+    width: 100%;
+  }
+  .project .project-content .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .project .project-content .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .project .project-content .card:nth-child(2) {
+    margin: 10px;
+  }
+  .project .project-content .card:last-child {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menu-btn img {
+    width: 55px;
+  }
+  .project .project-content .card {
+    width: 100%;
+  }
+  .project .project-content .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .project .project-content .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .project .project-content .card:nth-child(2) {
+    margin: 10px;
+  }
+  .project .project-content .card:last-child {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 5px 60px;
+  }
+  .max-width {
+    padding: 0 24px;
+  }
+  .project .project-content .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .project .project-content .card:nth-child(2) {
+    margin: 10px;
+  }
+  .project .project-content .card:last-child {
+    margin: 10px;
+  }
+}
